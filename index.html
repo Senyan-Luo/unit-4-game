@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Game!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Can you match my number?</h1>
+          <p class="lead">Click on any of the four puppies to increase you number, you win if it adds up to my number! Every round puppies will pick a new number as their value </p>
+        </div>
+      </div>
+      <div class="container">
+      <div class="row">
+          <div class= "col-sm-3">
+        <div class="card">
+          <button id="dog1"><img class="card-img-top" src="./assets/images/dog1.jpg" alt="Card image cap">
+          </button></div>
+          </div>
+        
+        <div class= "col-sm-3">
+        <div class="card">
+          <button id="dog2"><img class="card-img-top" src="./assets/images/dog2.jpg" alt="Card image cap">
+        </button></div>
+    </div>
+    <div class= "col-sm-3">
+        <div class="card">
+         <button id="dog3"><img class="card-img-top" src="./assets/images/dog3.jpg" alt="Card image cap">
+        </button> 
+    </div>
+    </div>
+    <div class= "col-sm-3">
+        <div class="card">
+           <button id="dog4"><img class="card-img-top" src="./assets/images/dog4.jpg" alt="Card image cap">
+          </button> 
+        </div>
+        </div>
+      </div>
+    </div>
 
+    <hr>
+    <div>
+      <ul class="list-group">
+          
+            <li class="list-group-item list-group-item-danger" id="goalNumber"></li>
+            <li class="list-group-item list-group-item-warning" id="scoreSum"></li>
+            <li class="list-group-item list-group-item-info" id="numWins"></li>
+            <li class="list-group-item list-group-item-light" id="numLosses"></li>
+          </ul>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+</html>
