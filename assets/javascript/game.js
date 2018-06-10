@@ -58,23 +58,25 @@ $(document).ready(function(){
     })
     function win(){
         numWins ++
+    
+        $("#numWins").text('Wins: ' + numWins) 
         reset()
-        $("#numWins").text('Wins: ' + numWins)
         
     }
     function lose(){
-        numLosses ++
+        numLosses ++ 
+        $("#numLosses").text('Losses '+ numLosses)
         reset()
-         $("#numLosses").text('Losses '+ numLosses)
+        
 
     }
     function reset(){
-        var goalNumber= Math.floor(Math.random() * 102 + 19); 
+        goalNumber= Math.floor(Math.random() * 102 + 19); 
         $("#goalNumber").text('Goal Number: '+ goalNumber)
-        var val1 = Math.floor(Math.random() * 12  + 1)
-        var val2 = Math.floor(Math.random() * 12  + 1)
-        var val3 = Math.floor(Math.random() * 12  + 1)
-        var val4 = Math.floor(Math.random() * 12  + 1)
+        val1 = Math.floor(Math.random() * 12  + 1)
+        val2 = Math.floor(Math.random() * 12  + 1)
+        val3 = Math.floor(Math.random() * 12  + 1)
+        val4 = Math.floor(Math.random() * 12  + 1)
         scoreSum = 0
         $("#scoreSum").text('Currently at: '+ scoreSum)
     }
