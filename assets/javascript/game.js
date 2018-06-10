@@ -58,14 +58,15 @@ $(document).ready(function(){
     })
     function win(){
         numWins ++
-    
         $("#numWins").text('Wins: ' + numWins) 
+        alert("You win! Woof woof!")
         reset()
         
     }
     function lose(){
         numLosses ++ 
         $("#numLosses").text('Losses '+ numLosses)
+        alert("We are picking a new number! Good luck~")
         reset()
         
 
